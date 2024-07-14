@@ -94,3 +94,43 @@ data_train_fire = load_images(pathtrain_fire)
 data_train_flood = load_images(pathtrain_flood)
 data_train_traffic  = load_images(pathtrain_traffic)
 data_train_normal = load_images(pathtrain_normal)
+
+##########################################################################################
+
+train = []
+trainlabel = []
+
+for a in data_train_collapsed:
+  train.append(a)
+  trainlabel.append(0)
+
+for b in data_train_fire:
+  train.append(b)
+  trainlabel.append(1)
+
+for c in data_train_flood:
+  train.append(c)
+  trainlabel.append(2)
+
+for d in data_train_traffic:
+  train.append(d)
+  trainlabel.append(3)
+
+for e in data_train_normal:
+  train.append(e)
+  trainlabel.append(4)
+
+###############################################
+
+training_AIDER =  []
+
+for a, b in zip(train,trainlabel):
+    training_AIDER.append([a,b])
+
+
+from sklearn.utils import shuffle
+ 
+training_AIDER = shuffle(training_AIDER)   # Shuffle array
+
+new_X = [x[0] for x in training_AIDER]
+new_y = [x[1] for x in training_AIDER]
