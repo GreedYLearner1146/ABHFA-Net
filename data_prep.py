@@ -95,7 +95,7 @@ data_train_flood = load_images(pathtrain_flood)
 data_train_traffic  = load_images(pathtrain_traffic)
 data_train_normal = load_images(pathtrain_normal)
 
-##########################################################################################
+################# Assign each class a number label and arrange them into respective arrays ###################################
 
 train = []
 trainlabel = []
@@ -120,13 +120,12 @@ for e in data_train_normal:
   train.append(e)
   trainlabel.append(4)
 
-###############################################
+####################### All of the above arrays combined into a training dataset ###########
 
 training_AIDER =  []
 
 for a, b in zip(train,trainlabel):
     training_AIDER.append([a,b])
-
 
 from sklearn.utils import shuffle
  
