@@ -133,3 +133,57 @@ training_AIDER = shuffle(training_AIDER)   # Shuffle array
 
 new_X = [x[0] for x in training_AIDER]
 new_y = [x[1] for x in training_AIDER]
+
+############################# The test datasets path  ##########################################
+
+pathtest_collapsed = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/collapsed/'
+pathtest_fire = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/fire/'
+pathtest_flood = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/flood/'
+pathtest_traffic = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/traffic/'
+pathtest_normal = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/normal/'
+
+data_test_collapsed = load_images(pathtest_collapsed)
+data_test_fire = load_images(pathtest_fire)
+data_test_flood = load_images(pathtest_flood)
+data_test_traffic  = load_images(pathtest_traffic)
+data_test_normal = load_images(pathtest_normal)
+
+########################### Assign each class a number label and arrange them into respective arrays ##########################
+
+test = []
+testlabel = []
+
+for a in data_test_collapsed:
+  test.append(a)
+  testlabel.append(0)
+
+for b in data_test_fire:
+  test.append(b)
+  testlabel.append(1)
+
+for c in data_test_flood:
+  test.append(c)
+  testlabel.append(2)
+
+for d in data_test_traffic:
+  test.append(d)
+  testlabel.append(3)
+
+for e in data_test_normal:
+  test.append(e)
+  testlabel.append(4)
+
+##################################  All of the above arrays combined into a test dataset #####################
+
+test_AIDER =  []
+
+for a, b in zip(test,testlabel):
+    test_AIDER.append([a,b])
+
+# Shuffle img array and label (Important to randomize order)
+
+test_AIDER = shuffle(test_AIDER)
+
+new_X_test = [x[0] for x in test_AIDER]
+new_y_test = [x[1] for x in test_AIDER]
+
