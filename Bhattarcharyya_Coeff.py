@@ -2,7 +2,7 @@ import numpy as np
 from scipy.linalg import norm
 from scipy.spatial.distance import euclidean
 
-def Bhattacharyya_coeff(x,y): 
+def Bhattacharyya_Coeff(x,y): 
     n = x.size(0)
     m = y.size(0)
     d = x.size(1)
