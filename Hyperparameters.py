@@ -5,3 +5,5 @@ N_SHOT = 5 # Number of images per class in the support set. Can change to 1.
 N_QUERY = 10  # Number of images per class in the query set
 N_EVALUATION_TASKS = 100
 
+N_TRAINING_EPISODES = 80000 
+N_VALIDATION_TASKS = 10 #100
