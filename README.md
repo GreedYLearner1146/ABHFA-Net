@@ -26,7 +26,8 @@ The rising incidence of natural and human-induced calamities necessitates enhanc
 
 # Model Architecture Figure 
 
-This is extracted from Fig. 
+This is extracted from Fig.4 from our main preprint manuscript. For more information about the figure please refer to the manuscript.
+<img width="1040" height="408" alt="ABHFA-Net" src="https://github.com/user-attachments/assets/1ce3a2f8-a5db-4b31-a8db-b93e58d03700" />
 
 # Preliminary Results 
 
