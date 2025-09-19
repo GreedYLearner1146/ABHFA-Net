@@ -23,3 +23,10 @@ The rising incidence of natural and human-induced calamities necessitates enhanc
 10) A series of functions is found inside a file labelled " ". They contained the helper functions to run the Bhattarcharyya Softmax (BHAS) loss function. The sequence in which they should be run is: Common_functions.py -> loss_and_miners_utils.py -> Module_With_Records.py -> Base_Reducers.py -> MeanReducer.py -> MultipleReducers_Do_Nothing_Reducers.py -> BaseDistances.py -> LpDistance.py -> ModulesWithRecordsandReducer.py -> Mixins.py -> BaseMetricLossFunction.py -> GenericPairLoss.py -> BhattLoss.py. The helper functions are mainly adapted from the pytorch metric learning library by Kevin Musgrave: https://github.com/KevinMusgrave/pytorch-metric-learning.
 11) Run training_fit.py to begin training.
 12) Finally, evaluate the trained model using Eval.py.
+
+# Model Architecture Figure 
+
+# Preliminary Results 
+
+# Relevant References
+
