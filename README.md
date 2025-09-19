@@ -31,6 +31,12 @@ This is extracted from Fig.4 from our main preprint manuscript. For more informa
 
 # Preliminary Results 
 
+The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the miniImageNet benchmarked dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
+
+| Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
+| ------ | ------| ------| 
+|ABHFA-Net (AIDER)| **68.2 $\pm$ 1.19** | **78.3$\pm$ 0.75** |
+
 # Citation
 
 # Relevant References
