@@ -12,4 +12,5 @@ The rising incidence of natural and human-induced calamities necessitates enhanc
 # Code Instructions
 
 1) Run data_prep_AIDER.py first for uploading the AIDER training and testing data from your selected directory.
-2) Run data_augmentation.py for the data augmentation code. The type of augmentation is also stated in the main manuscript. 
+2) Run data_augmentation.py for the data augmentation code. The type of augmentation is also stated in the main manuscript.
+3) Run AIDER_Dataloader.py, which store the training and test tuple (Images, labels) in a Pytorch dataloader format.
