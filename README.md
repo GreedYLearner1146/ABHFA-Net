@@ -11,4 +11,4 @@ The rising incidence of natural and human-induced calamities necessitates enhanc
 
 # Code Instructions
 
-1) Run 
+1) Run data_prep_AIDER.py first for uploading the AIDER training and testing data from your selected directory.
