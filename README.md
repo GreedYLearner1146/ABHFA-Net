@@ -36,7 +36,7 @@ In this work we utilized three datasets designed (and could be designed) for aer
 
 AIDER comprised of 4 disaster classes along with its aftermath (Fire, Flood, Traffic Accident, Collapsed Buildings), as well as one normal (non-disaster class). This is shown in Fig.2. The non-disaster dataset are of greater quantity than that of the disaster class, hence AIDER is imbalanced by default. However, one can perform undersampling to balance out the class distributions.
 
-<img width="703" height="583" alt="AIDER_samples" src="https://github.com/user-attachments/assets/ce37fc67-c533-4080-a191-f75690add994" /> \
+<img width="403" height="283" alt="AIDER_samples" src="https://github.com/user-attachments/assets/ce37fc67-c533-4080-a191-f75690add994" /> \
 Fig.2. Example images from each AIDER subset disaster classes.
 
 
