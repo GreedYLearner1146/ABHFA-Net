@@ -47,7 +47,7 @@ The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach.
 | Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
 | ------ | ------| ------| 
 |ABHFA-Net (AIDER)| **68.2 $\pm$ 1.19** | **78.3 $\pm$ 0.75** |
-|ABHFA-Net (CDD)| **63.0 $\pm$ 0.95** | **70.3 $\pm$ 0.53** |
+|ABHFA-Net (CDD)| **64.3 $\pm$ 1.73** | **69.7 $\pm$ 0.53** |
 |ABHFA-Net (MEDIC)| **60.2 $\pm$ 1.22** | **66.5 $\pm$ 0.95** |
 
 # Citation
