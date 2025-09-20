@@ -31,7 +31,7 @@ This is extracted from Fig.4 from our main preprint manuscript. For more informa
 
 # Preliminary Results 
 
-The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER [1], CDD[2] and MEDIC [3] dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
+The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER [1], CDD [2] and MEDIC [3] dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
 
 | Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
 | ------ | ------| ------| 
@@ -43,4 +43,11 @@ The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach.
 # Citation
 
 # Relevant References
+
+[1]  Kyrkou, C., Theocharides, T.: Emergencynet: Efficient aerial image classification for drone-based emergency monitoring using atrous convolutional feature fusion. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing 13, 1687–1699 (2020).
+
+[2] Niloy, F.F., Nayem, A.B.S., Sarker, A., Paul, O., Amin, M.A., Ali, A.A., Zaber, M.I., Rahman, A.M., et al.: A novel disaster image data-set and characteristics analysis using attention model. In: IEEE 2020 25th International Conference on Pattern Recognition (ICPR), pp. 6116–6122 (2021).
+
+[3] Alam, F., Alam, T., Hasan, M.A., Hasnat, A., Imran, M., Ofli, F.: Medic: a multi-task learning dataset for disaster image classification. Neural Computing and Applications 35(3), 2609–2632 (2023).
+
 
