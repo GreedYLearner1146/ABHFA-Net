@@ -29,6 +29,10 @@ The rising incidence of natural and human-induced calamities necessitates enhanc
 This is extracted from Fig.4 from our main preprint manuscript. For more information about the figure please refer to the manuscript.
 <img width="1040" height="408" alt="ABHFA-Net" src="https://github.com/user-attachments/assets/1ce3a2f8-a5db-4b31-a8db-b93e58d03700" />
 
+# Datasets
+
+In this work we utilized three datasets designed (and could be designed) for aerial disaster classification: AIDER (Aerial Image Dataset for Emergency Response) by Kykrou and Theocharides, CDD (Comprehensive Disaster Dataset) by Niloy et al., and MEDIC (Multi-Task Learning Dataset for Disaster Image Classification) by Alam et al. 
+
 # Preliminary Results 
 
 The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER [1], CDD [2] and MEDIC [3] dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
@@ -38,7 +42,6 @@ The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach.
 |ABHFA-Net (AIDER)| **68.2 $\pm$ 1.19** | **78.3 $\pm$ 0.75** |
 |ABHFA-Net (CDD)| **63.0 $\pm$ 0.95** | **74.2 $\pm$ 0.65** |
 |ABHFA-Net (MEDIC)| **60.2 $\pm$ 1.22** | **66.5 $\pm$ 0.95** |
-
 
 # Citation
 
