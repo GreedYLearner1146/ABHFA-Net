@@ -7,7 +7,7 @@ The arXiv preprint of the work will be available soon.
 
 The rising incidence of natural and human-induced calamities necessitates enhanced visual recognition techniques for diverse disaster categories, utilizing critical visual data from photographic sources. Advancements in artificial intelligence and robust computational systems resilient to harsh environments have rendered this field critical to expedite rescue efforts. However, the visual classification of disaster situations faced formidable obstacles due to data constraints, which are primarily due to the limitations of data collection platforms and the complexities inherent in compiling a comprehensive database of high-quality disaster imagery. Few-Shot Learning (FSL) offers a viable solution to these issues but current FSL applications primarily rely on benchmark datasets devoid of disaster-related imagery obtained via remote sensing, thus curtailing its full potential. This paper proposes the Attention BHattacharyya Distance-based Feature Aggregation Network (ABHFA-Net) which performs quantitative comparison and aggregation of similar feature sample probability distributions to formulate class-prototype distributions using the Bhattacharyya distance. Concurrently, an attention mechanism is incorporated into our encoder structure for the query and support image sets. This not only highlights the importance of the attention mechanism and Bhattacharyya distance but also sets a new standard in FSL-based prototype aggregation, especially for disaster image categorization. Additionally, this paper pioneers a Bhattacharyya distance-based contrastive training loss, a more suitable variant of the cosine similarity contrastive loss to compute probability distribution differences. When combined with the categorical cross-entropy loss, it boosts FSL performance to unparalleled levels. Experiments with three separate disaster image classification datasets confirm the effectiveness and superiority of our model over existing FSL methodologies.
 
-(The following code repository is for AIDER evaluation only. The corresponding relevant codes for CDD and MEDIC would be available in the future.)
+(The following code repository is for AIDER [1] evaluation only. The corresponding relevant codes for CDD [2] and MEDIC [3] would be added in shortly.)
 
 # Code Instructions
 
@@ -31,7 +31,7 @@ This is extracted from Fig.4 from our main preprint manuscript. For more informa
 
 # Preliminary Results 
 
-The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the miniImageNet benchmarked dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
+The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER [1], CDD[2] and MEDIC [3] dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
 
 | Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
 | ------ | ------| ------| 
