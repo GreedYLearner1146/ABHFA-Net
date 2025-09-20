@@ -28,10 +28,13 @@ The rising incidence of natural and human-induced calamities necessitates enhanc
 
 This is extracted from Fig.4 from our main preprint manuscript. For more information about the figure please refer to the manuscript.
 <img width="1040" height="408" alt="ABHFA-Net" src="https://github.com/user-attachments/assets/1ce3a2f8-a5db-4b31-a8db-b93e58d03700" />
+Fig.1: Illustration of the ABHFA-Net algorithmic architecture.
 
 # Datasets
 
 In this work we utilized three datasets designed (and could be designed) for aerial disaster classification: AIDER (Aerial Image Dataset for Emergency Response) by Kykrou and Theocharides, CDD (Comprehensive Disaster Dataset) by Niloy et al., and MEDIC (Multi-Task Learning Dataset for Disaster Image Classification) by Alam et al. 
+
+AIDER comprised of 4 disaster classes along with its aftermath (Fire, Flood, Traffic Accident, Collapsed Buildings), as well as one normal (non-disaster class). This is shown in Fig.2. The non-disaster dataset are of greater quantity than that of the disaster class, hence AIDER is imbalanced by default. However, one can perform undersampling to balance out the class distributions.
 
 # Preliminary Results 
 
