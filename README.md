@@ -7,13 +7,13 @@ The arXiv preprint of the work will be available soon.
 
 The rising incidence of natural and human-induced calamities necessitates enhanced visual recognition techniques for diverse disaster categories, utilizing critical visual data from photographic sources. Advancements in artificial intelligence and robust computational systems resilient to harsh environments have rendered this field critical to expedite rescue efforts. However, the visual classification of disaster situations faced formidable obstacles due to data constraints, which are primarily due to the limitations of data collection platforms and the complexities inherent in compiling a comprehensive database of high-quality disaster imagery. Few-Shot Learning (FSL) offers a viable solution to these issues but current FSL applications primarily rely on benchmark datasets devoid of disaster-related imagery obtained via remote sensing, thus curtailing its full potential. This paper proposes the Attention BHattacharyya Distance-based Feature Aggregation Network (ABHFA-Net) which performs quantitative comparison and aggregation of similar feature sample probability distributions to formulate class-prototype distributions using the Bhattacharyya distance. Concurrently, an attention mechanism is incorporated into our encoder structure for the query and support image sets. This not only highlights the importance of the attention mechanism and Bhattacharyya distance but also sets a new standard in FSL-based prototype aggregation, especially for disaster image categorization. Additionally, this paper pioneers a Bhattacharyya distance-based contrastive training loss, a more suitable variant of the cosine similarity contrastive loss to compute probability distribution differences. When combined with the categorical cross-entropy loss, it boosts FSL performance to unparalleled levels. Experiments with three separate disaster image classification datasets confirm the effectiveness and superiority of our model over existing FSL methodologies.
 
-(The following code repository is for AIDER [1] evaluation only. The corresponding relevant codes for CDD [2] and MEDIC [3] would be added in shortly.)
+(The following code repository is for AIDER [1] and CDD [2] evaluation only. The corresponding relevant codes for MEDIC [3] would be added in the future.)
 
 # Code Instructions
 
-1) Run data_prep_AIDER.py first for uploading the AIDER training and testing data from your selected directory.
+1) Run data_prep_AIDER.py (or data_prep_CDD.py) first for uploading the AIDER (CDD) training and testing data from your selected directory. 
 2) Run Data_Augmentation.py for the data augmentation code. The type of augmentation is also stated in the main manuscript.
-3) Run AIDER_Dataloader.py, which store the training and test tuple (Images, labels) in a Pytorch dataloader format.
+3) Run AIDER_Dataloader.py (or CDD_Dataloader.py), which store the respective training and test tuple (Images, labels) in a Pytorch dataloader format.
 4) Run Hyperparameters.py, which contained the hyperparameters for the few-shot learning.
 5) Run Attention.py, which contains the codes for the channel-spatial attention mechanism.
 6) Run the ResNet-12 backbone, which is a modified ResNet12 with the channel-spatial attention imbued into it.
