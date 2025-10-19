@@ -1,13 +1,13 @@
-# ABHFA-Net (Attention BHattacharyya Distance-based Feature Aggregation Network)
-This is the code repository for our work ``Enhancing Few-Shot Classification of Disaster Imagery with ABHFA-Net'' by Gao Yu Lee, Tanmoy Dam, Md. Meftahul Ferdaus, Daniel Puiu Poenar, and Vu Duong. 
+# ATTBHFA-Net (Attention BHattacharyya-Hellinger Distance-based Feature Aggregation Network)
+This is the code repository for our work ``Enhancing Few-Shot Classification of Benchmark and Disaster Imagery with ATTBHFA-Net'' by Gao Yu Lee, Tanmoy Dam, Md. Meftahul Ferdaus, Daniel Puiu Poenar, and Vu Duong. 
 
 The arXiv preprint of the work will be available soon.
 
 # Abstract
 
-The rising incidence of natural and human-induced calamities necessitates enhanced visual recognition techniques for diverse disaster categories, utilizing critical visual data from photographic sources. Advancements in artificial intelligence and robust computational systems resilient to harsh environments have rendered this field critical to expedite rescue efforts. However, the visual classification of disaster situations faced formidable obstacles due to data constraints, which are primarily due to the limitations of data collection platforms and the complexities inherent in compiling a comprehensive database of high-quality disaster imagery. Few-Shot Learning (FSL) offers a viable solution to these issues but current FSL applications primarily rely on benchmark datasets devoid of disaster-related imagery obtained via remote sensing, thus curtailing its full potential. This paper proposes the Attention BHattacharyya Distance-based Feature Aggregation Network (ABHFA-Net) which performs quantitative comparison and aggregation of similar feature sample probability distributions to formulate class-prototype distributions using the Bhattacharyya distance. Concurrently, an attention mechanism is incorporated into our encoder structure for the query and support image sets. This not only highlights the importance of the attention mechanism and Bhattacharyya distance but also sets a new standard in FSL-based prototype aggregation, especially for disaster image categorization. Additionally, this paper pioneers a Bhattacharyya distance-based contrastive training loss, a more suitable variant of the cosine similarity contrastive loss to compute probability distribution differences. When combined with the categorical cross-entropy loss, it boosts FSL performance to unparalleled levels. Experiments with three separate disaster image classification datasets confirm the effectiveness and superiority of our model over existing FSL methodologies.
+The increasing frequency of natural and human-induced disasters necessitates advanced visual recognition techniques capable of analyzing critical photographic data. With progress in artificial intelligence and resilient computational systems, rapid and accurate disaster classification has become crucial for efficient rescue operations. However, visual recognition in disaster contexts faces significant challenges due to limited and diverse data from the difficulties in collecting and curating comprehensive, high-quality disaster imagery. Few-Shot Learning (FSL) provides a promising approach to data scarcity, yet current FSL research mainly relies on generic benchmark datasets lacking remote-sensing disaster imagery, limiting its practical effectiveness. Moreover, disaster images exhibit high intra-class variation and inter-class similarity, hindering the performance of conventional metric-based FSL methods. To address these issues, this paper introduces the Attention-based Bhattacharyya-Hellinger Feature Aggregation Network (ATTBHFA-Net), which linearly combines the Bhattacharyya and Hellinger distances to compare and aggregate feature probability distributions for robust prototype formation. The Bhattacharyya distance serves as a contrastive margin that enhances inter-class separability, while the Hellinger distance regularizes same-class alignment. This framework parallels contrastive learning but operates over probability distributions rather than embedded feature points. Furthermore, a Bhattacharyya-Hellinger distance-based contrastive loss is proposed as a distributional counterpart to cosine similarity loss, used jointly with categorical cross-entropy to significantly improve FSL performance. Experiments on four FSL benchmarks and two aerial disaster image datasets demonstrate the superior effectiveness and generalization of ATTBHFA-Net compared to existing approaches.
 
-(The following code repository is for AIDER [1] and CDD [2] evaluation only. The corresponding relevant codes for MEDIC [3] would be added in the future.)
+(The following code repository is for AIDER [1], CDD [2] and miniImageNet [3] evaluation.)
 
 # Code Instructions
 
@@ -42,13 +42,12 @@ Fig.2. Example images from each AIDER subset disaster classes.
 
 # Preliminary Results 
 
-The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER [1], CDD [2] and MEDIC [3] dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
+The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER [1] and CDD [2] dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
 
 | Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
 | ------ | ------| ------| 
-|ABHFA-Net (AIDER)| **68.2 $\pm$ 1.19** | **78.3 $\pm$ 0.75** |
-|ABHFA-Net (CDD)| **64.3 $\pm$ 1.73** | **70.7 $\pm$ 0.52** |
-|ABHFA-Net (MEDIC)| **60.2 $\pm$ 1.22** | **66.5 $\pm$ 0.95** |
+|ATTBHFA-Net (AIDER)| **67.0 $\pm$ 1.7** | **76.9 $\pm$ 0.3** |
+|ATTBHFA-Net (CDD)| **58.8 $\pm$ 1.0** | **62.6 $\pm$ 0.4** |
 
 # Citation
 
