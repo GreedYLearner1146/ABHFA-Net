@@ -1,7 +1,7 @@
 # ATTBHFA-Net (Attention BHattacharyya-Hellinger Distance-based Feature Aggregation Network)
 This is the code repository for our work ``Enhancing Few-Shot Classification of Benchmark and Disaster Imagery with ATTBHFA-Net'' by Gao Yu Lee, Tanmoy Dam, Md. Meftahul Ferdaus, Daniel Puiu Poenar, and Vu Duong. 
 
-The arXiv preprint of the work will be available soon.
+The arXiv preprint of the work is available at: https://arxiv.org/abs/2510.18326 
 
 # Abstract
 
