@@ -51,6 +51,8 @@ The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach.
 
 # Citation
 
+If you find our work useful, you can cite it as follows: 
+
 
 # Relevant References
 
