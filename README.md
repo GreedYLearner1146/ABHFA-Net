@@ -43,7 +43,7 @@ Fig.2. Example images from each AIDER subset disaster and (non-disaster) classes
 
 The CDD is comprised of 7 disaster classes and 4 normal (non-disaster classes). This is shown in Fig.3. We split the CDD into meta-training and meta-testing class. The meta-training classes comprised of the sea, damaged buildings, wildfire, landslide, (non-disaster) street and building and (non-disaster) human images. The meta-testing classes comprised of the water disaster, urban fire, drought, earthquake, and the (non-disaster) forest. 
 
-<img width="919" height="392" alt="image" src="https://github.com/user-attachments/assets/fcea12d5-f979-44fb-8eec-b493ac2c4d58" /> \
+<img width="719" height="292" alt="image" src="https://github.com/user-attachments/assets/fcea12d5-f979-44fb-8eec-b493ac2c4d58" /> \
 Fig.3. Example images from each CDD subset disaster and (non-disaster) classes.
 
 The bar plots of the meta-train and meta-test class distribution is shown in Fig.4 and Fig.5 respectively.
