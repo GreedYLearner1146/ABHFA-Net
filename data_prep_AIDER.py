@@ -82,11 +82,11 @@ def load_images(path, size = (1024,1024)):
 
 # Five different directory corresponding to 5 different classes.
 
-pathtrain_collapsed = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Train/1.collapsed/'
-pathtrain_fire = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Train/2.fire/'
-pathtrain_flood = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Train/3.flood/'
-pathtrain_traffic = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Train/4.traffic/'
-pathtrain_normal = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Train/5.normal/'
+pathtrain_collapsed = 'Insert your AIDER directory'
+pathtrain_fire = 'Insert your AIDER directory'
+pathtrain_flood = 'Insert your AIDER directory'
+pathtrain_traffic = 'Insert your AIDER directory'
+pathtrain_normal = 'Insert your AIDER directory'
 
 
 data_train_collapsed = load_images(pathtrain_collapsed)
@@ -136,11 +136,11 @@ new_y = [x[1] for x in training_AIDER]
 
 ############################# The test datasets path  ##########################################
 
-pathtest_collapsed = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/collapsed/'
-pathtest_fire = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/fire/'
-pathtest_flood = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/flood/'
-pathtest_traffic = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/traffic/'
-pathtest_normal = '/content/drive/MyDrive/MAML-keras-master/data/AIDER III/Test/normal/'
+pathtest_collapsed = 'Insert your AIDER directory'
+pathtest_fire = 'Insert your AIDER directory'
+pathtest_flood = 'Insert your AIDER directory'
+pathtest_traffic = 'Insert your AIDER directory'
+pathtest_normal = 'Insert your AIDER directory'
 
 data_test_collapsed = load_images(pathtest_collapsed)
 data_test_fire = load_images(pathtest_fire)
