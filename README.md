@@ -72,6 +72,6 @@ Lee, G.Y., Dam, T., Ferdaus, M.M., Poenar, D.P., Duong, V.: Enhancing few-shot c
 
 [2] Niloy, F.F., Nayem, A.B.S., Sarker, A., Paul, O., Amin, M.A., Ali, A.A., Zaber, M.I., Rahman, A.M., et al.: A novel disaster image data-set and characteristics analysis using attention model. In: IEEE 2020 25th International Conference on Pattern Recognition (ICPR), pp. 6116–6122 (2021).
 
-[3] Alam, F., Alam, T., Hasan, M.A., Hasnat, A., Imran, M., Ofli, F.: Medic: a multi-task learning dataset for disaster image classification. Neural Computing and Applications 35(3), 2609–2632 (2023).
+[3] Vinyals, O., Blundell, C., Lillicrap, T., Wierstra, D., et al.: Matching networks for one-shot learning. Advances in neural information processing systems 29 (2016).
 
 
