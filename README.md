@@ -34,22 +34,28 @@ Fig.1: Illustration of the ABHFA-Net algorithmic architecture.
 
 # Datasets
 
-In this work we utilized three datasets designed (and could be designed) for aerial disaster classification: AIDER (Aerial Image Dataset for Emergency Response) by Kykrou and Theocharides, CDD (Comprehensive Disaster Dataset) by Niloy et al., and MEDIC (Multi-Task Learning Dataset for Disaster Image Classification) by Alam et al. 
+In this work we utilized two datasets designed (and could be designed) for aerial disaster classification: AIDER (Aerial Image Dataset for Emergency Response) by Kykrou and Theocharides, and CDD (Comprehensive Disaster Dataset) by Niloy et al.
 
 AIDER comprised of 4 disaster classes along with its aftermath (Fire, Flood, Traffic Accident, Collapsed Buildings), as well as one normal (non-disaster class). This is shown in Fig.2. The non-disaster dataset are of greater quantity than that of the disaster class, hence AIDER is imbalanced by default. However, one can perform undersampling to balance out the class distributions.
 
-<img width="403" height="283" alt="AIDER_samples" src="https://github.com/user-attachments/assets/ce37fc67-c533-4080-a191-f75690add994" /> \
-Fig.2. Example images from each AIDER subset disaster classes.
+<img width="549" height="374" alt="image" src="https://github.com/user-attachments/assets/bfa7a108-92ce-428e-bf48-dd4b486a2c24" /> \
+Fig.2. Example images from each AIDER subset disaster and (non-disaster) classes.
+
+The CDD is comprised of 7 disaster classes and 4 normal (non-disaster classes). This is shown in Fig.3. We split the CDD into meta-training and meta-testing class. The meta-training classes comprised of the sea, damaged buildings, wildfire, landslide, (non-disaster) street and building and (non-disaster) human images. The meta-testing classes comprised of the water disaster, urban fire, drought, earthquake, and the (non-disaster) forest. 
+
+<img width="919" height="392" alt="image" src="https://github.com/user-attachments/assets/fcea12d5-f979-44fb-8eec-b493ac2c4d58" /> \
+Fig.3. Example images from each CDD subset disaster and (non-disaster) classes.
 
 
 # Preliminary Results 
 
-The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER [1] and CDD [2] dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
+The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach. The table below tabulated the relevant values obtained for the AIDER, CDD (aerial disaster image classification) and miniImageNet (benchmark) dataset when using the 5-way-1-shot and 5-way-5-shot approaches (in %):
 
 | Method | 5-way-1-shot (%) | 5-way-5-shot (%) |
 | ------ | ------| ------| 
 |ATTBHFA-Net (AIDER)| **67.0 $\pm$ 1.7** | **76.9 $\pm$ 0.3** |
 |ATTBHFA-Net (CDD)| **58.8 $\pm$ 1.0** | **62.6 $\pm$ 0.4** |
+|ATTBHFA-Net (miniImageNet)| **73.4 $\pm$ 1.3** | **87.4 $\pm$ 0.7**  |
 
 # Citation
 
