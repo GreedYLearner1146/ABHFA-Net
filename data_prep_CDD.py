@@ -232,8 +232,8 @@ for i,j in zip(imgarrayforest,labelarrayforest):
   testlabel.append(j)
 
 for k,l in zip(imgarraysea,labelarraysea):
-  trainarray.append(k)  # trainarray
-  trainlabel.append(l)  #trainalbel
+  trainarray.append(k)  
+  trainlabel.append(l)  
 
 for u,v in zip(imgarrayhuman,labelarrayhuman):
   trainarray.append(u)
@@ -250,8 +250,8 @@ for o,p in zip(imgarrayurbanfire,labelarrayurbanfire):
   testlabel.append(p)
 
 for q,r in zip(imgarraywater,labelarraywater):
-  testarray.append(q)   #testarray
-  testlabel.append(r)   #testlabel
+  testarray.append(q)   
+  testlabel.append(r)   
 
 for s,t in zip(imgarraydrought,labelarraydrought):
   testarray.append(s)
