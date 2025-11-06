@@ -53,8 +53,18 @@ The few-shot evaluation utilized are the 5-way-1-shot and 5-way-5-shot approach.
 
 # Citation
 
-If you find our work useful, you can cite it as follows: 
+If you find our work useful, you can cite it as follows (in latex ref): 
 
+@article{lee2025enhancing,
+  title={Enhancing Few-Shot Classification of Benchmark and Disaster Imagery with ATTBHFA-Net},
+  author={Lee, Gao Yu and Dam, Tanmoy and Ferdaus, Md Meftahul and Poenar, Daniel Puiu and Duong, Vu},
+  journal={arXiv preprint arXiv:2510.18326},
+  year={2025}
+}
+
+or directly as: 
+
+Lee, G.Y., Dam, T., Ferdaus, M.M., Poenar, D.P., Duong, V.: Enhancing few-shot classification of benchmark and disaster imagery with attbhfa-net. arXiv preprint arXiv:2510.18326 (2025)
 
 # Relevant References
 
