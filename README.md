@@ -48,10 +48,10 @@ Fig.3. Example images from each CDD subset disaster and (non-disaster) classes.
 
 The bar plots of the meta-train and meta-test class distribution is shown in Fig.4 and Fig.5 respectively.
 
-<img width="690" height="490" alt="Untitled-1" src="https://github.com/user-attachments/assets/edd919a5-78fa-4f80-957d-5981b9ad945c" /> \
+<img width="490" height="290" alt="Untitled-1" src="https://github.com/user-attachments/assets/edd919a5-78fa-4f80-957d-5981b9ad945c" /> \
 Fig.4. Meta-train class distribution bar plots.
 
-<img width="690" height="489" alt="Untitled" src="https://github.com/user-attachments/assets/c83eeada-97be-43eb-a2ea-1c85646d4521" /> \
+<img width="490" height="289" alt="Untitled" src="https://github.com/user-attachments/assets/c83eeada-97be-43eb-a2ea-1c85646d4521" /> \
 Fig.5. Meta-test class distribution bar plots.
 
 # Preliminary Results 
