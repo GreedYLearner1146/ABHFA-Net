@@ -38,7 +38,7 @@ In this work we utilized two datasets designed (and could be designed) for aeria
 
 AIDER comprised of 4 disaster classes along with its aftermath (Fire, Flood, Traffic Accident, Collapsed Buildings), as well as one normal (non-disaster class). This is shown in Fig.2. The non-disaster dataset are of greater quantity than that of the disaster class, hence AIDER is imbalanced by default. However, one can perform undersampling to balance out the class distributions.
 
-<img width="549" height="374" alt="image" src="https://github.com/user-attachments/assets/bfa7a108-92ce-428e-bf48-dd4b486a2c24" /> \
+<img width="349" height="174" alt="image" src="https://github.com/user-attachments/assets/bfa7a108-92ce-428e-bf48-dd4b486a2c24" /> \
 Fig.2. Example images from each AIDER subset disaster and (non-disaster) classes.
 
 The CDD is comprised of 7 disaster classes and 4 normal (non-disaster classes). This is shown in Fig.3. We split the CDD into meta-training and meta-testing class. The meta-training classes comprised of the sea, damaged buildings, wildfire, landslide, (non-disaster) street and building and (non-disaster) human images. The meta-testing classes comprised of the water disaster, urban fire, drought, earthquake, and the (non-disaster) forest. 
