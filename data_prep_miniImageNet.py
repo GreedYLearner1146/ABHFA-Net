@@ -161,8 +161,8 @@ from sklearn.utils import shuffle
 train_array = shuffle(train_array)
 val_array = shuffle(val_array)
 
-new_X_train = [x[0] for x in train_array]
-new_y_train = [x[1] for x in train_array]
+new_X_train_miniImageNet = [x[0] for x in train_array]
+new_y_train_miniImageNet = [x[1] for x in train_array]
 
-new_X_val = [x[0] for x in val_array]
-new_y_val = [x[1] for x in val_array]
+new_X_val_miniImageNet = [x[0] for x in val_array]
+new_y_val_miniImageNet = [x[1] for x in val_array]
