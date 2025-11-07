@@ -26,7 +26,7 @@ The following code repository is for AIDER [1], CDD [2] and miniImageNet [3] eva
 
 # Code Instructions (For miniImageNet)
 
-1) Run data_prep_miniImageNet.py first for uploading the AIDER (CDD) training and testing data from your selected directory. 
+1) Run data_prep_miniImageNet.py first for uploading the miniImageNet training and testing data from your selected directory. 
 2) Run Data_Augmentation_miniImageNet.py for the miniImageNet data augmentation code. The type of augmentation is also stated in the main manuscript.
 3) Run miniImageNet_Dataloader.py, which store the respective training and test tuple (Images, labels) in a Pytorch dataloader format.
 4) Run Hyperparameters.py, which contained the hyperparameters for the few-shot learning.
