@@ -49,7 +49,7 @@ Fig.1: Illustration of the ABHFA-Net algorithmic architecture.
 
 # Datasets
 
-In this work we utilized two datasets designed (and could be designed) for aerial disaster classification: AIDER (Aerial Image Dataset for Emergency Response) by Kykrou and Theocharides, and CDD (Comprehensive Disaster Dataset) by Niloy et al.
+In this work we utilized two datasets designed (and could be designed) for aerial disaster classification: AIDER (Aerial Image Dataset for Emergency Response) by Kykrou and Theocharides, and CDD (Comprehensive Disaster Dataset) by Niloy et al. All images are cropped to 128 x 128 x 3 in our experiment.
 
 AIDER comprised of 4 disaster classes along with its aftermath (Fire, Flood, Traffic Accident, Collapsed Buildings), as well as one normal (non-disaster class). This is shown in Fig.2. The non-disaster dataset are of greater quantity than that of the disaster class, hence AIDER is imbalanced by default. However, one can perform undersampling to balance out the class distributions.
 
@@ -68,6 +68,8 @@ Fig.4. Meta-train class distribution bar plots.
 
 <img width="490" height="289" alt="Untitled" src="https://github.com/user-attachments/assets/c83eeada-97be-43eb-a2ea-1c85646d4521" /> \
 Fig.5. Meta-test class distribution bar plots.
+
+The benchmark dataset includes the miniImageNet dataset, which is made up of 64 meta-training classes, 16 meta-valid classes, and 20 meta-test classes. All images are of  84 x 84 x 3 in our experiment.
 
 # Preliminary Results 
 
