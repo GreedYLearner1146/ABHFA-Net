@@ -13,7 +13,7 @@ class SqRootSimilarity(BaseDistance):
 
 ####################################################################################
 
-class BhattcharyyaSimilarity(SqRootSimilarity):
+class BhattcharyyaHellingerSimilarity(SqRootSimilarity):
     def __init__(self, **kwargs):
         super().__init__(normalize_embeddings=True, **kwargs)
         assert self.is_inverted
@@ -21,7 +21,7 @@ class BhattcharyyaSimilarity(SqRootSimilarity):
 
 ####################################################################################
 
-class BhattLoss(GenericPairLoss):
+class BhattHellingerLoss(GenericPairLoss):
     def __init__(self, temperature=0.01, **kwargs):
         super().__init__(mat_based_loss=False, **kwargs)
         self.temperature = temperature
@@ -46,9 +46,17 @@ class BhattLoss(GenericPairLoss):
             max_val = torch.max(
                 pos_pairs, torch.max(neg_pairs, dim=1, keepdim=True)[0]
             ).detach()
-            numerator = torch.exp(torch.sqrt(torch.abs(pos_pairs*max_val))).squeeze(1)   # Bhattacharyya similarity.
-            denominator = torch.sum(torch.exp(torch.sqrt(torch.abs(neg_pairs*max_val))), dim=1) + numerator  # Bhattacharyya similarity.
-            log_exp = torch.log((numerator / denominator) + small_val(dtype))
+
+            numerator_bhatt_hellinger1 = (torch.sqrt(torch.abs(pos_pairs)) - torch.sqrt(torch.abs(max_val)))  # Bhatt-Hellinger similarity 1 (numerator).
+            denominator_bhatt_hellinger1 = (torch.sqrt(torch.abs(neg_pairs)) - torch.sqrt(torch.abs(max_val))) # Bhatt-Hellinger similarity 1 (denominator).
+
+            numerator_bhatt_hellinger2 = torch.square(torch.sqrt(torch.abs(pos_pairs)) - torch.sqrt(torch.abs(max_val)))  # Bhatt-Hellinger similarity 2 (numerator).
+            denominator_bhatt_hellinger2 = torch.square(torch.sqrt(torch.abs(neg_pairs)) - torch.sqrt(torch.abs(max_val))) # Bhatt-Hellinger similarity 2 (denominator).
+
+            numerator_total = torch.exp(numerator_bhatt_hellinger1-0.5*numerator_bhatt_hellinger2).squeeze(1)                    # Bhatt-Hellinger similarity.
+            denominator_total  = torch.sum(torch.exp(denominator_bhatt_hellinger1-0.5*denominator_bhatt_hellinger2), dim=1) + numerator_total   # Bhatt-Hellinger similarity.
+
+            log_exp = torch.log((numerator_total / denominator_total) + small_val(dtype))
             return {
                 "loss": {
                     "losses": -log_exp,
@@ -59,7 +67,7 @@ class BhattLoss(GenericPairLoss):
         return self.zero_losses()
 
     def get_default_distance(self):
-        return BhattcharyyaSimilarity()
+        return BhattcharyyaHellingerSimilarity()
 #############################################################################################
 
-BhattLoss = BhattLoss(temperature=0.01)  # Note: cannot go below 0.01!
+BhattHellingerloss = BhattHellingerLoss(temperature=0.01)  # Note: cannot go below 0.01!
