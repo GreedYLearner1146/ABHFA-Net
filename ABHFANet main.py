@@ -25,8 +25,8 @@ class ABHFANet(nn.Module):
                 for label in range(n_way)
             ]
         )
-        # Compute the BHATTACHARYYA coefficient from queries to prototypes
-        dists = Bhattacharyya_Coeff(z_query, z_proto)
+        # Compute the Hellinger_Bhatt_dist from queries to prototypes
+        dists =  Hellinger_Bhatt_dist(z_query, z_proto)
 
         # And here is the super complicated operation to transform those distances into classification scores!
         scores = dists
