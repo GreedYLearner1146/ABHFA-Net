@@ -15,8 +15,8 @@ class AIDERCustomDataset(Dataset):
       
 ###################################################################
 
-train_dataset = AIDERCustomDataset(new_X, new_y,transform=data_transform)
-test_dataset = AIDERCustomDataset(new_X_test, new_y_test, transform=data_transform_test)
+train_dataset = AIDERCustomDataset(new_X_AIDER, new_y_AIDER,transform=data_transform)
+test_dataset = AIDERCustomDataset(new_X_test_AIDER, new_y_test_AIDER, transform=data_transform_test)
 
 from torch.utils.data import DataLoader
 
