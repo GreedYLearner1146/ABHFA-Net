@@ -263,6 +263,11 @@ for g,h in zip(imgarraystreet,labelarraystreet):
 
 ############ Check array shape for meta-train and meta-test class #########################
 
+trainarray_CDD = trainarray
+trainlabel_CDD = trainlabel
+testarrayCDD = testarray
+testlabelCDD = testlabel
+
 print(np.shape(trainarray))
 print(np.shape(trainlabel))
 
