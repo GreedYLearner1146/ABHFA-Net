@@ -265,11 +265,11 @@ for g,h in zip(imgarraystreet,labelarraystreet):
 
 trainarray_CDD = trainarray
 trainlabel_CDD = trainlabel
-testarrayCDD = testarray
-testlabelCDD = testlabel
+testarray_CDD = testarray
+testlabel_CDD = testlabel
 
-print(np.shape(trainarray))
-print(np.shape(trainlabel))
+print(np.shape(trainarray_CDD))
+print(np.shape(trainlabel_CDD))
 
-print(np.shape(testarray))
-print(np.shape(testlabel))
+print(np.shape(testarray_CDD))
+print(np.shape(testlabel_CDD))
