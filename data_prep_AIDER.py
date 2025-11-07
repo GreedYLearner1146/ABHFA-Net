@@ -131,8 +131,8 @@ from sklearn.utils import shuffle
  
 training_AIDER = shuffle(training_AIDER)   # Shuffle array
 
-new_X = [x[0] for x in training_AIDER]
-new_y = [x[1] for x in training_AIDER]
+new_X_AIDER = [x[0] for x in training_AIDER]
+new_y_AIDER = [x[1] for x in training_AIDER]
 
 ############################# The test datasets path  ##########################################
 
@@ -184,6 +184,6 @@ for a, b in zip(test,testlabel):
 
 test_AIDER = shuffle(test_AIDER)
 
-new_X_test = [x[0] for x in test_AIDER]
-new_y_test = [x[1] for x in test_AIDER]
+new_X_test_AIDER = [x[0] for x in test_AIDER]
+new_y_test_AIDER = [x[1] for x in test_AIDER]
 
