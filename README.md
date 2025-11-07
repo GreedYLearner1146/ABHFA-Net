@@ -69,7 +69,7 @@ Fig.4. Meta-train class distribution bar plots.
 <img width="490" height="289" alt="Untitled" src="https://github.com/user-attachments/assets/c83eeada-97be-43eb-a2ea-1c85646d4521" /> \
 Fig.5. Meta-test class distribution bar plots.
 
-The benchmark dataset includes the miniImageNet dataset, which is made up of 64 meta-training classes, 16 meta-valid classes, and 20 meta-test classes. All images are of  84 x 84 x 3 in our experiment.
+The benchmark dataset presented here is of the miniImageNet dataset, which is made up of 64 meta-training classes, 16 meta-valid classes, and 20 meta-test classes. All images are of  84 x 84 x 3 in our experiment.
 
 # Preliminary Results 
 
