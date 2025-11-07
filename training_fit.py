@@ -16,7 +16,7 @@ def fit(
     )
 
     loss1 = criterion1(classification_scores, query_labels.cuda())
-    loss2 = Bhattloss(classification_scores, query_labels.cuda())
+    loss2 = BhattLoss(classification_scores, query_labels.cuda())
     loss =  loss1 + 0.5*loss2 
     loss.backward()
     optimizer.step()
