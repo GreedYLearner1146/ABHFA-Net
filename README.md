@@ -12,7 +12,7 @@ The following code repository is for AIDER [1], CDD [2] and miniImageNet [3] eva
 # Code Instructions (For AIDER and CDD)
 
 1) Run data_prep_AIDER.py (or data_prep_CDD.py) first for uploading the AIDER (CDD) training and testing data from your selected directory. 
-2) Run Data_Augmentation.py for the data augmentation code. The type of augmentation is also stated in the main manuscript.
+2) Run Data_Augmentation.py for the AIDER and CDD data augmentation code. The type of augmentation is also stated in the main manuscript.
 3) Run AIDER_Dataloader.py (or CDD_Dataloader.py), which store the respective training and test tuple (Images, labels) in a Pytorch dataloader format.
 4) Run Hyperparameters.py, which contained the hyperparameters for the few-shot learning.
 5) Run Attention.py, which contains the codes for the channel-spatial attention mechanism.
@@ -25,6 +25,19 @@ The following code repository is for AIDER [1], CDD [2] and miniImageNet [3] eva
 12) Finally, evaluate the trained model using Eval.py.
 
 # Code Instructions (For miniImageNet)
+
+1) Run data_prep_miniImageNet.py first for uploading the AIDER (CDD) training and testing data from your selected directory. 
+2) Run Data_Augmentation_miniImageNet.py for the miniImageNet data augmentation code. The type of augmentation is also stated in the main manuscript.
+3) Run miniImageNet_Dataloader.py, which store the respective training and test tuple (Images, labels) in a Pytorch dataloader format.
+4) Run Hyperparameters.py, which contained the hyperparameters for the few-shot learning.
+5) Run Attention.py, which contains the codes for the channel-spatial attention mechanism.
+6) Run the ResNet-12 backbone, which is a modified ResNet12 with the channel-spatial attention imbued into it.
+7) Run Bhattacharyya_Coeff.py, which contains the Bhattacharyya coefficient computation codes.
+8) Now run ABHFANet main.py which comprised of the main backbone of the ABHFA-Net.
+9) Run Sampler and Loader.py which provides the task sampler for the training and testing dataloader.
+10) A series of functions is found inside a file labelled "demo-notebook" (placeholder name). They contained the helper functions to run the Bhattarcharyya Softmax (BHAS) loss function. The sequence in which they should be run is: Common_functions.py -> loss_and_miners_utils.py -> Module_With_Records.py -> Base_Reducers.py -> MeanReducer.py -> MultipleReducers_Do_Nothing_Reducers.py -> BaseDistances.py -> LpDistance.py -> ModulesWithRecordsandReducer.py -> Mixins.py -> BaseMetricLossFunction.py -> GenericPairLoss.py -> BhattLoss.py. The helper functions are mainly adapted from the pytorch metric learning library by Kevin Musgrave: https://github.com/KevinMusgrave/pytorch-metric-learning.
+11) Run training_fit.py to begin training.
+12) Finally, evaluate the trained model using Eval.py.
 
 # Model Architecture Figure 
 
