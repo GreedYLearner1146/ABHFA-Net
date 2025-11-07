@@ -28,8 +28,8 @@ class CDDCustomDataset(Dataset):
 
 ###################################################################
 
-train_dataset = CDDCustomDataset(trainarray, trainlabel,transform=data_transform)
-test_dataset = CDDCustomDataset(testarray, testlabel, transform=data_transform_test)
+train_dataset = CDDCustomDataset(trainarray_CDD, trainlabel_CDD,transform=data_transform)
+test_dataset = CDDCustomDataset(testarray_CDD, testlabel_CDD, transform=data_transform_test)
 
 from torch.utils.data import DataLoader
 
