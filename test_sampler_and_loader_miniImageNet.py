@@ -23,13 +23,3 @@ test_loader = DataLoader(
  example_query_labels,
  example_class_ids,
 ) = next(iter(test_loader))
-
-model.eval()
-example_scores = model(
-    example_support_images.cuda(),
-    example_support_labels.cuda(),
-    example_query_images.cuda(),
-).detach()
-
-_, example_predicted_labels = torch.max(example_scores.data, 1)
-testlabels = [instance[1] for instance in test_dataset]
