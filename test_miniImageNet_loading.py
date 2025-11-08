@@ -1,5 +1,5 @@
 
-random.seed(500)
+random.seed(10)
 shuffled = random.sample(files_list_miniImageNet,len(files_list_miniImageNet))
 _,vallist = get_training_and_valid_sets(shuffled)
 
