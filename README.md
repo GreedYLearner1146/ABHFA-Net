@@ -9,6 +9,8 @@ The increasing frequency of natural and human-induced disasters necessitates adv
 
 The following code repository is for AIDER [1], CDD [2] and miniImageNet [3] evaluation.
 
+**This code repository may be updated at various time so stay tune.**
+
 # Code Instructions (For AIDER and CDD)
 
 1) Run data_prep_AIDER.py (or data_prep_CDD.py) first for uploading the AIDER (CDD) training and testing data from your selected directory. 
