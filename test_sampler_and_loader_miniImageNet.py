@@ -23,3 +23,6 @@ test_loader = DataLoader(
  example_query_labels,
  example_class_ids,
 ) = next(iter(test_loader))
+
+plot_images(example_support_images, "support images", images_per_row=N_SHOT)
+plot_images(example_query_images, "query images", images_per_row=N_QUERY)
