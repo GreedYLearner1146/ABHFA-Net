@@ -6,6 +6,7 @@ example_scores = model(
 ).detach()
 
 _, example_predicted_labels = torch.max(example_scores.data, 1)
+testlabels = [instance[1] for instance in test_dataset]
 
 ############################################################################
 
