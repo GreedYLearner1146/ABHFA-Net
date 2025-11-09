@@ -29,7 +29,7 @@ class ABHFANet(nn.Module):
         dists =  Hellinger_Bhatt_dist(z_query, z_proto)
 
         # And here is the super complicated operation to transform those distances into classification scores!
-        scores = dists
+        scores = -dists
         return scores
 
 convolutional_network_output = resnet12()
